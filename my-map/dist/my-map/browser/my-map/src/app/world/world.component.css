@@ -1,0 +1,59 @@
+/* CSS FOR MAP AND DATA TABLE */
+
+.data-table {
+  position: relative;
+  background-color: #FFA80f;
+  left: 72%;
+  top: -625px;
+  width: 375px;
+  border-radius: 10px;
+  padding: 20px 20px;
+  justify-content: left;
+  align-content: flex-start;
+}
+
+.data-table p {
+  font-size: 18px;
+  text-align: left;
+  padding-top: 12px;
+}
+
+.card2 {
+  position: relative;
+  flex: 1;
+  max-width: 100%;
+  margin: 0;
+  padding-left: 50px;
+  padding-top: 40px;
+}
+
+svg path {
+  cursor: pointer;;
+}
+
+path {
+  transition: transform 0.3s ease, fill 0.3s ease; 
+  transform-origin: center; 
+}
+
+path:hover {
+  transform: scale(1.009);  
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5)); 
+}
+
+
+svg {
+  height: 750px;
+  width: auto;
+  padding: 65px;
+  border: 10px solid #FFA80f;
+}
+
+.container {
+  margin: 0;
+}
+
+.row1, .row2, .row3 {
+  width: 100%;
+  display: flex;
+}
