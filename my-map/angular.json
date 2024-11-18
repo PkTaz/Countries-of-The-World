@@ -24,6 +24,18 @@
               {
                 "glob": "**/*",
                 "input": "public"
+              },
+              {
+                "glob": "**/*",
+                "input": "src"
+              },
+              {
+                "glob": "404.html",
+                "input": "src"
+              },
+              {
+                "glob": "robots.txt",
+                "input": "src"
               }
             ],
             "styles": [
@@ -36,7 +48,7 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "2mb",
+                  "maximumWarning": "2MB",
                   "maximumError": "5MB"
                 },
                 {
@@ -82,6 +94,22 @@
               {
                 "glob": "**/*",
                 "input": "public"
+              },
+              {
+                "glob": "**/*",
+                "input": "src"
+              },
+              {
+                "glob": "404.html",
+                "input": "src"
+              },
+              {
+                "glob": "robots.txt",
+                "input": "src"
+              },
+              {
+                "glob": "sitemap.txt",
+                "input": "src"
               }
             ],
             "styles": [
