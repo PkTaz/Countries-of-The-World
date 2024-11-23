@@ -1,59 +1,75 @@
 /* CSS FOR MAP AND DATA TABLE */
 
 .data-table {
-  position: relative;
-  background-color: #FFA80f;
-  left: 72%;
-  top: -625px;
-  width: 375px;
-  border-radius: 10px;
-  padding: 20px 20px;
-  justify-content: left;
-  align-content: flex-start;
-}
-
-.data-table p {
-  font-size: 18px;
-  text-align: left;
-  padding-top: 12px;
-}
-
-.card2 {
-  position: relative;
-  flex: 1;
-  max-width: 100%;
-  margin: 0;
-  padding-left: 50px;
-  padding-top: 40px;
-}
-
-svg path {
-  cursor: pointer;;
-}
-
-path {
-  transition: transform 0.3s ease, fill 0.3s ease; 
-  transform-origin: center; 
-}
-
-path:hover {
-  transform: scale(1.009);  
-  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5)); 
-}
-
-
-svg {
-  height: 750px;
-  width: auto;
-  padding: 65px;
-  border: 10px solid #FFA80f;
-}
-
-.container {
-  margin: 0;
-}
-
-.row1, .row2, .row3 {
-  width: 100%;
+  position: fixed;
+  top: 20px; /* Distance from the bottom */
+  right: 20px; /* Distance from the right */
+  background-color: rgba(35, 241, 73, 0.378);
+  color: #ffffff;
+  width: 350px;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
   display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Text inside the table */
+.data-table p {
+  font-size: 16px;
+  margin: 0;
+  line-height: 1.5;
+  font-weight: 500;
+  color: #fff; /* Ensure main text is white for contrast */
+}
+
+/* Span styles for id values to stand out */
+.data-table span {
+  color: #ffffff; /* Highlight span text with the primary color */
+  font-weight: bold; /* Make it bold to differentiate */
+  font-size: 24px; /* Same size as the paragraph text for consistency */
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 1px;
+}
+
+/* Header or title of the table */
+.data-table h2 {
+  font-size: 22px;
+  margin-bottom: 12px;
+  font-weight: bold;
+  color: #000000; /* Primary color for headers */
+}
+
+.data-table .button:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+  transform: translateY(-2px); 
+}
+
+/* Example table rows or items */
+.data-table .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #EEE; /* Light divider lines for rows */
+  padding: 8px 0;
+}
+
+.data-table .row:last-child {
+  border-bottom: none; /* No border for the last row */
+}
+
+/* Set initial color to green and define hover effect */
+svg path {
+  cursor: pointer;
+  fill: black;
+  transition: transform 0.3s ease, fill 0.3s ease; 
+  transform-origin: center;
+}
+
+svg path:hover {
+  transform: scale(1.009);
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+  fill: rgb(0, 128, 0) !important; /* Ensure it stays green on hover */
 }
