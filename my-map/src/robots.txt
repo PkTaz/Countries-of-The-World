@@ -1,5 +1,0 @@
-User-agent: *
-Disallow: /404.html
-Disallow: /index.html
-
-Sitemap: https://PkTaz.github.io/Countries-of-The-World/sitemap.txt
